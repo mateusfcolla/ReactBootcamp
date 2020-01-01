@@ -1,26 +1,17 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {choice, remove} from './helpers';
+import foods from './foods';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Melissa gostosa
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component{
+    render(){
+        let chosen = choice(foods)
+        console.log(`I'd like one ${chosen}, please.`);
+        console.log(`Here you go: ${chosen}`);
+        console.log(`Delicious! May i have another?`);
+        remove(foods, chosen);
+        console.log(`I'm sorry, we're all out. We have ${foods.length} left`);
+        return(<h1>Press F12</h1>)
+    }
 }
 
 export default App;
