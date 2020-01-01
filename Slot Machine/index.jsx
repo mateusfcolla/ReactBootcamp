@@ -3,9 +3,21 @@ class App extends React.Component{
         return(
             <div>
                 <h1>Slot machine</h1>
-                <Machine/>
-                <Machine/>
-                <Machine/>
+                <Machine
+                s1 = "😎"
+                s2 = "👺"
+                s3 = "🎅"
+                />
+                <Machine
+                s1 = "😰"
+                s2 = "😜"
+                s3 = "👮"
+                />
+                <Machine
+                s1 = "🐮"
+                s2 = "🐨"
+                s3 = "🐥"
+                />
             </div>
         );
     }
