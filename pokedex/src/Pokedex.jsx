@@ -34,7 +34,6 @@ class Pokedex extends Component{
                 type = "flying"
                 base_experience = {178}
                 />
-
             </div>
         );
     }
