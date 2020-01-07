@@ -1,0 +1,29 @@
+.Pokemon{
+    /* Positioning */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* Sizing */
+    width: 10rem;
+    height: 13rem;
+    /* Actual styling */
+    color: black;
+    background-color: rgb(211, 211, 211);
+    border-radius: 5px;
+}
+
+.Pokemon h1{
+    font-size: inherit;
+    color: blue;
+}
+
+.Pokemon img{
+    padding: 20%;
+}
+.Pokemon img:hover{
+    width: 150%;
+    height: 150%;
+    padding: 15%;
+    transition: 0.5s;
+}

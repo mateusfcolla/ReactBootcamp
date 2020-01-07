@@ -1,0 +1,28 @@
+.Pokemon{
+    background-color: rgb(211, 211, 211);
+    border-radius: 10px;
+    color: black;
+    display: flex;
+    min-width: 10rem;
+    max-width: 12rem;
+    min-height: 13rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Pokemon h1{
+    font-size: 1rem;
+    font-weight: lighter;
+    margin-bottom: 3%;
+    color: blue;
+}
+
+.Pokemon h5{
+    font-weight: 50;
+    margin-bottom: 3%;
+}
+
+.Pokemon img{
+    height: auto;
+}
